@@ -45,12 +45,12 @@ for pose_element in ['x', 'y', 'z', 'yaw']:
 def generate_launch_description():
 
     #Static Frame
-    diem_map_tf_node = Node(
-        package="tf2_ros",
-        executable="static_transform_publisher",
-        arguments=["0", "0", "0", "0", "0", "0", "map", "odom" ],
-        name="diem_map_tf",
-    )
+    # diem_map_tf_node = Node(
+    #     package="tf2_ros",
+    #     executable="static_transform_publisher",
+    #     arguments=["0", "0", "0", "0", "0", "0", "map", "odom" ],
+    #     name="diem_map_tf",
+    # )
 
     # Directories
     pkg_turtlebot4_ignition_bringup = get_package_share_directory(
@@ -84,7 +84,7 @@ def generate_launch_description():
 
     # Create launch description and add actions
     ld = LaunchDescription(ARGUMENTS)
-    ld.add_action(diem_map_tf_node)
+    #ld.add_action(diem_map_tf_node)
     ld.add_action(ignition)
     ld.add_action(robot_spawn)
     return ld
