@@ -24,6 +24,8 @@ setup(
             "nav_step = nav_pkg.nav_step:main",
             "obj_avoidance = nav_pkg.obstacle_avoidance:main",
             "odom = nav_pkg.odom:main",
+            "exercise1 = nav_pkg.exercise1:main",
+            "exercise2 = nav_pkg.exercise2:main",
         ],
     },
 )
