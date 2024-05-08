@@ -70,9 +70,10 @@ class MyNode(Node):
         self.navigator.setInitialPose(initial_pose)
         self.navigator.waitUntilNav2Active()
         self.get_logger().info("Nav2 Ready")
-        waypoints = [self.navigator.getPoseStamped([1.0, 1.0], TurtleBot4Directions.EAST),
-                     self.navigator.getPoseStamped([-1.0, 1.0], TurtleBot4Directions.EAST),
-                     self.navigator.getPoseStamped([0.0, 2.0], TurtleBot4Directions.EAST)]
+        waypoints = [self.navigator.getPoseStamped([-25.2043, 1.1586], TurtleBot4Directions.NORTH),
+                     self.navigator.getPoseStamped([-25.7649, -10.0092], TurtleBot4Directions.NORTH),
+                     self.navigator.getPoseStamped([-23.7542, -9.6984], TurtleBot4Directions.NORTH),
+                     self.navigator.getPoseStamped([-23.05457, 0.8257], TurtleBot4Directions.NORTH)]
 
         for goal_pose in waypoints:
             self.wait_for_next()
