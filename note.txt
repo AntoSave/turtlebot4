@@ -26,3 +26,9 @@ ros2 launch turtlebot4_viz view_robot.launch.py
 
 #Simulation
 ros2 launch diem_gazebo turtlebot4_ignition_no_dock.launch.py world:=square
+
+
+#192.168.0.142
+
+# Configurazione telecamera
+#sudo nano /opt/ros/humble/share/turtlebot4_bringup/config/oakd_pro.yaml
