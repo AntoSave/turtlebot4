@@ -26,30 +26,3 @@ ros2 launch turtlebot4_viz view_robot.launch.py
 
 #Simulation
 ros2 launch diem_gazebo turtlebot4_ignition_no_dock.launch.py world:=square
-
-
-#192.168.0.142
-
-# Accesso ssh per riavviare i nodi ros
-ssh ubuntu@ip_del_turtlebot
-password: turtlebot4
-comando da lanciare per riavviare i nodi: turtlebot4-service-restart
-
-# Parametri camera funzionanti
-CONFIG 1
-resolution massimo: 4K
-height massimo: 1440
-width massimo: 2560
-preview massima: 1000
-fps: 15
-keep_aspect_ratio
-
-CONFIG 2
-resolution massimo: 1080
-height massimo: 720
-width massimo: 1280
-preview massima: 700
-fps: 15
-
-# Configurazione telecamera
-#sudo nano /opt/ros/humble/share/turtlebot4_bringup/config/oakd_pro.yaml
